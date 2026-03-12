@@ -1,0 +1,38 @@
+# Solana Validator Health Dashboard - Configuration
+# Author: Mr.Nobody
+
+# ── RPC ─────────────────────────────────────────────────────────────────────
+rpc_url = "https://api.mainnet-beta.solana.com"
+
+# Your validator identity pubkey
+validator_identity = "YOUR_VALIDATOR_IDENTITY_PUBKEY"
+
+# Your vote account pubkey
+vote_account = "YOUR_VOTE_ACCOUNT_PUBKEY"
+
+# ── Polling ──────────────────────────────────────────────────────────────────
+# How often to collect metrics (seconds)
+poll_interval_secs = 30
+
+# ── Prometheus Exporter ───────────────────────────────────────────────────────
+# Set to true to enable /metrics HTTP endpoint
+prometheus_enabled = true
+prometheus_port = 9090
+
+# ── Alerts ───────────────────────────────────────────────────────────────────
+# Health score threshold — alert if score drops below this
+alert_score_threshold = 70
+
+# Delinquency alert — alert if validator is delinquent
+alert_on_delinquency = true
+
+# Slot lag alert threshold (slots behind tip)
+alert_slot_lag_threshold = 150
+
+# ── Email Alerts (optional) ──────────────────────────────────────────────────
+# email_enabled = false
+# smtp_host = "smtp.gmail.com"
+# smtp_port = 587
+# smtp_user = "you@gmail.com"
+# smtp_password = "your_app_password"
+# alert_email_to = "ops@yourorg.com"

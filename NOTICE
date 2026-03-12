@@ -1,0 +1,13 @@
+Solana Validator Health Dashboard
+Copyright (c) 2025 Marchel Penchev
+All rights reserved by the original author.
+
+All original work, design, and architecture by Marchel Penchev.
+
+This software is licensed under the MIT License.
+See the LICENSE file for full terms.
+
+---
+
+Third-party dependencies used in this project are subject to
+their own licenses. See Cargo.toml for the full dependency list.
